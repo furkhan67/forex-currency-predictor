@@ -96,19 +96,15 @@ Follow the official Docker guide to install it on your system:
 - Write a `Dockerfile` to define the app environment. For example:  
 
 `FROM python:3.9`  
-`WORKDIR /app`
-`COPY . /app`
-`RUN pip install -r requirements.txt`
-`EXPOSE 8501`
+`WORKDIR /app`  
+`COPY . /app`  
+`RUN pip install -r requirements.txt`  
+`EXPOSE 8501`  
 `CMD ["streamlit", "run", "app.py"]`
 - Make sure you have a `requirements.txt` listing all libraries  
 - Use `docker build` and `docker run` to run the app in a container. For example:
 `sudo docker build -t forex-predictor .`
 `docker run -p 8501:8501 forex-predictor`  
-
-## Optional
-
-Use this [link](https://github.com/oanda/py-api-streaming) to fetch live data from OANDA api. You can create your own dataset using this api.
 
 ---
 
@@ -119,4 +115,8 @@ Use this [link](https://github.com/oanda/py-api-streaming) to fetch live data fr
 ✅ Choose and save the best model for each currency  
 ✅ Build a Streamlit app in `app.py` that loads saved models  
 ✅ Dockerize your project for easy deployment  
+
+## Optional
+
+Use this [link](https://github.com/oanda/py-api-streaming) to fetch live data from OANDA api. You can create your own dataset using this api.
 
