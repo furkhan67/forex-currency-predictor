@@ -90,7 +90,7 @@ Now that your app works locally, package it with Docker so that it is ready for 
 
 Follow the official Docker guide to install it on your system:  
 👉 [Installing Docker](https://docs.docker.com/get-started/get-docker/) 
-👉 [Dockerizing Streamlit Applications]([https://docs.docker.com/language/python/build-images/](https://docs.streamlit.io/deploy/tutorials/docker))
+👉 [Dockerizing Streamlit Applications](https://docs.streamlit.io/deploy/tutorials/docker/)
 
 ### Steps:
 - Write a `Dockerfile` to define the app environment. For example:  
